@@ -5,26 +5,6 @@
     (+ 0 1)
 )
 
-;; (defun str8s-solver (board)
-;;     (iter (loop for i in '(1 2 3 4 5 6)
-;;         (iter (loop for j in '(1 2 3 4 5 6)
-;;             (if (= (aref board i j) 0)
-;;                 (loop for n in '(1 2 3 4 5 6))
-;;                     (if (= (possible i j n board) 1)
-;;                         (setf (aref board i j) n)))
-;;                 )
-;;             )      
-;;         )
-;;     )
-;; )
-
-
-
-;;                        (setf (aref board i j) 0)
-;; 
-
-
-
 (defun str8s-solver (board)
     (loop for i in '(0 1 2 3 4 5)
         do (loop for j in '(0 1 2 3 4 5)
